@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container-new-list">
+        <button id="new-list-button" data-open-modal>New list</button>
+        
+        <dialog data-modal id="new-list-dialog">
+            
+            <select id="set-status-select">
+                <option value="default">Set status</option>
+                <option value="Not started">Not started</option>
+                <option value="In progress">In progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <form id="form-create-note">
+
+                <div class="new-note-input-container">
+                     <input id="input-title-note" type="text" required value="My to do list"/>
+                     <input id="input-description-note" type="text" value="Type your task"/>
+                </div>
+
+                <div id="new-note-button-container">
+                    <button id="save-note-button" type="submit">Save</button>
+                    <button id="clear-note" type="button">Clear</button>
+                </div>
+
+            </form>
+
+            <button data-close-modal>x</button>
+        </dialog>
+    </div>
+
+    <div id="container-in-progress-list"></div>
+    <div id="container-not-started-list"></div>
+    <div id="container-completed-list"></div>
+    
+</body>
+</html>
