@@ -12,7 +12,7 @@ export function openNewList() {
     });  
    
 }
-openNewList();
+
 
 
 //CLOSE LIST
@@ -39,8 +39,8 @@ document.getElementById('clear-note').addEventListener("click", () => {
     clearInputsNewList(); 
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const saveButton = document.getElementById('save-note-button');
-    saveButton.addEventListener("click", createCopyOfNewList);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const saveButton = document.getElementById('save-note-button');
+//     saveButton.addEventListener("click", createCopyOfNewList);
+// });
 

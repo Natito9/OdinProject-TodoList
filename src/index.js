@@ -30,7 +30,6 @@ function handleSaveList(event) {
   });
 }
 
-handleSaveList();
 
 // notes array stored
 export const toDoListStorage = [];
