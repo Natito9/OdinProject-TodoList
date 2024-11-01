@@ -1,3 +1,4 @@
+import './styles.css';
 // notes array where will be stored
 const toDoListStorage = [];
 // Object constructor
@@ -48,12 +49,14 @@ export function addToDoList(){
     const description = document.querySelector("#input-description-note").value;
     const status = document.querySelector("#set-status-select").value;
 
-    // Create and add new ToDoList object
+    // Create and add new ToDoList object. separate!!!!!
     const newToDoList = new ToDoList(title, description, status);
     toDoListStorage.push(newToDoList);
 
 }
 // function addToDoListId
+
+/////////////////       EVENTS  NEW LIST  //////////////////
 
 // Update the sortByStatus function to use the ToDoList class
 function sortByStatus(event) {
@@ -71,8 +74,6 @@ function sortByStatus(event) {
 
 
 
-
-/////////////////       EVENTS  NEW LIST  //////////////////
 function openNewList() {
    
     const newListButton = document.querySelector("#new-list-button"); 

@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 80vh;
+    background-color: rgb(209, 209, 237);
+
+}
+
+/* header */
+header {
+    display:flex;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    gap:2rem;
+    
+}
+
+/* new list dialog */
+
+#new-list-dialog { 
+   width: 50%;
+   height: 60%;
+
+}
+
+.container-status-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+div[data-index] {
+    background-color: rgb(255, 244, 160);
+}
+

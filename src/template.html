@@ -6,8 +6,12 @@
     <title>ToDo List</title>
 </head>
 <body>
-    <div class="container-new-list">
+    <header>
+        <h3> To Do List manager</h3>
         <button id="new-list-button" data-open-modal>New list</button>
+
+    </header>
+    <!-- <div class="container-new-list-dialog"> -->
         
         <dialog data-modal id="new-list-dialog">
             
@@ -34,11 +38,17 @@
 
             <button data-close-modal>x</button>
         </dialog>
+    <!-- </div> -->
+    <div class="container-status-list">
+        <div id="container-in-progress-list">
+            <h4>In progress</h4>
+        </div>
+        <div id="container-not-started-list">
+            <h4>Not started</h4>
+        </div>
+        <div id="container-completed-list">
+            <h4>Completed</h4>
+        </div>
     </div>
-
-    <div id="container-in-progress-list"></div>
-    <div id="container-not-started-list"></div>
-    <div id="container-completed-list"></div>
-    
 </body>
 </html>
